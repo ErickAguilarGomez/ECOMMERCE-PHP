@@ -9,7 +9,9 @@ class Conexion
             $opciones=array(
                 PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION
             );
-            echo "exito";
+            echo "exito
+            
+            ";
             $this->conexion=new PDO($dsn,DB_USER,DB_PASS);
         } catch (PDOException $e) {
             echo $e->getMessage();
@@ -19,3 +21,4 @@ class Conexion
         $this->conexion=null;
     }
 }
+

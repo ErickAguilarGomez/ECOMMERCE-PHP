@@ -2,7 +2,7 @@
 
 session_start();
 require "modelo/login.php";
-
+/* */
 class LoginController{
     public function index(){
         if(isset($_SESSION['login'])){
